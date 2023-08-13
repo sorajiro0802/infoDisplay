@@ -10,32 +10,39 @@
 # Setup
 ### 1. For OLED with I2C connection [^1]
 <b>1.1 Enable Raspberry Pi I2C interface.</b><br>
-
 Open terminal and type below<br>
-```$ sudo raspi-config```<br>
+```Terminal: $ sudo raspi-config```<br>
 [ 3 Interface Options ] -> [ P5 I2C ] -> ["はい" (or "Yes")]<br>
 -> [ "了解" ] -> [ Finish ]
 
-<b>1.2 Make Python-venv and Install Modules.</b>
-
+<b>1.2 Make Python-venv and Install Modules.</b><br>
 Open terminal and type below<br>
-```$ python3 -m venv venv```<br>
-```$ source venv/bin/activate```<br>
-```(venv) $ pip install adafruit-circuitpython-ssd1306```<br>
-```(venv) $ pip install smbus2 pillow```<br>
+```Terminal: 
+$ python3 -m venv venv
+$ source venv/bin/activate
+(venv) $ pip install adafruit-circuitpython-ssd1306
+(venv) $ pip install smbus2 pillow
+```
 
 ### 2. For LED controll [^2]
 <b>2.1 Install Raspberry Pi Library and Enable it.</b><br>
-```(venv) $ sudo apt install pigpio```<br>
-```(venv) $ sudo service pigpio start```<br>
-```(venv) $ systemctl enable pigpiod.service```
-
+```Terminal:
+(venv) $ sudo apt install pigpio
+(venv) $ sudo service pigpio start
+(venv) $ systemctl enable pigpiod.service
+```
 <b>2.2 Install modules</b><br>
-```(venv) $ pip install pigpio```<br>
-```(venv) $ pip install gpiozero```<br>
+```Terminal:
+(venv) $ pip install pigpio
+(venv) $ pip install gpiozero
+```
+<br>
 
-# Start Program
+# Start and Stop Program
+* start
 ```(venv) $ python main.py```
+* stop 
+Control + C
 
 ---
 [^1]: ラズパイを使って、OLED表示デバイスに文字列や画像を表示するよ
