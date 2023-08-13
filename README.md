@@ -36,7 +36,6 @@ $ source venv/bin/activate
 (venv) $ pip install pigpio
 (venv) $ pip install gpiozero
 ```
-<br>
 
 # Start and Stop Program
 * start
