@@ -1,5 +1,3 @@
-from time import sleep
-
 from gpiozero import LED
 from gpiozero import Button
 from gpiozero.pins.pigpio import PiGPIOFactory
@@ -7,7 +5,6 @@ from gpiozero.pins.pigpio import PiGPIOFactory
 from board import I2C
 from PIL import Image, ImageDraw, ImageFont
 import adafruit_ssd1306
-from time import sleep
 
 DEVICE_ADDR = 0x3C
 DISP_WIDTH = 128
