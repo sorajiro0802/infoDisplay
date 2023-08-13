@@ -38,10 +38,8 @@ $ source venv/bin/activate
 ```
 
 # Start and Stop Program
-* start
-```(venv) $ python main.py```
-* stop 
-Control + C
+* start : `(venv) $ python main.py`
+* stop  : Control + C
 
 ---
 [^1]: ラズパイを使って、OLED表示デバイスに文字列や画像を表示するよ
